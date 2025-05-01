@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+header {
+  background: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ccc;
+}
+
+header nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.hero {
+  background: #a7c4f2;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.hero-text p {
+  margin: 20px 0;
+}
+
+.hero img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+.section {
+  padding: 40px;
+}
+
+.section h2 {
+  font-size: 32px;
+  color: green;
+}
+
+.services,
+.projects {
+  background: #28a745;
+  color: white;
+  text-align: center;
+}
+
+.services h2,
+.projects h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.service-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.service-items div {
+  margin: 10px;
+  text-align: center;
+}
+
+.project-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  gap: 20px;
+}
+
+.testimonial {
+  background: #a7c4f2;
+  padding: 40px;
+  text-align: center;
+}
+
+.footer {
+  background: #111;
+  color: white;
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer a {
+  color: white;
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.btn {
+  background: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.round-img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.bottom-bar {
+  text-align: center;
+  background: green;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header nav {
+    margin-top: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .service-items,
+  .project-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .section h2 {
+    font-size: 24px;
+  }
+
+  .btn {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+
+h3 {
+  color: #111;
+}
+
+p {
+  color: #111;
+}
+
+.service-items img {
+  width: 200px;
+  height: 200px;
+}
+
+.project-items img {
+  height: 100px;
+  width: 100px;
+}
+
+/* about */
+
+.about {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+.leadership-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.image-container {
+  flex: 1;
+  padding-right: 20px;
+  display: flex;
+  justify-content: center;
+}
+.image-container img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.text-content {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.text-content h2 {
+  font-size: 2rem;
+  color: #000000;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.text-content p {
+  font-size: 1.1rem;
+  color: #444444;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.text-content button {
+  background-color: #0064e0;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+
+.text-content button:hover {
+  background-color: #0040a0;
+}
+
+@media (max-width: 768px) {
+  .leadership-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .image-container {
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+  .text-content {
+    padding-left: 0;
+    padding-top: 0;
+  }
+}
